@@ -29,6 +29,18 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
     _model = createModel(context, () => GetStarted03Model());
 
     animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 1030.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
@@ -107,7 +119,7 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: Image.asset(
-                      'assets/images/4a3ee947aa4e02e8ada74ce0eb120dac.jpg',
+                      'assets/images/DALLE_2024-12-02_06.48.52_-_A_distant_shot_of_a_chief_mechanic_resting_after_work,_sitting_on_a_bench_near_a_mechanical_workshop._He_is_smiling_warmly_and_looking_at_his_mobile_p.webp',
                     ).image,
                   ),
                 ),
@@ -119,48 +131,6 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                       width: double.infinity,
                       height: 140.0,
                       decoration: const BoxDecoration(),
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            30.0, 70.0, 30.0, 0.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8.0),
-                              child: Image.asset(
-                                'assets/images/Untitled_design_(1).png',
-                                width: 176.0,
-                                fit: BoxFit.contain,
-                              ),
-                            ),
-                            InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                context.pushNamed('Login');
-                              },
-                              child: Text(
-                                'Skip',
-                                style: FlutterFlowTheme.of(context)
-                                    .titleMedium
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleMediumFamily,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w500,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleMediumFamily),
-                                    ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
                     ),
                     Align(
                       alignment: const AlignmentDirectional(0.0, 1.0),
@@ -295,7 +265,7 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                                       24.0, 0.0, 24.0, 0.0),
                                   iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: FlutterFlowTheme.of(context).accent1,
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
@@ -324,7 +294,8 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                     ),
                   ],
                 ),
-              ),
+              ).animateOnPageLoad(
+                  animationsMap['containerOnPageLoadAnimation']!),
             ),
           ],
         ),

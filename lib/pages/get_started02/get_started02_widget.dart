@@ -264,7 +264,7 @@ class _GetStarted02WidgetState extends State<GetStarted02Widget>
                                       24.0, 0.0, 24.0, 0.0),
                                   iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: FlutterFlowTheme.of(context).accent1,
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(

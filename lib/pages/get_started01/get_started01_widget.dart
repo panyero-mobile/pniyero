@@ -29,6 +29,18 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
     _model = createModel(context, () => GetStarted01Model());
 
     animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 1060.0.ms,
+            begin: 0.0,
+            end: 0.865,
+          ),
+        ],
+      ),
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
@@ -251,7 +263,7 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                                       24.0, 0.0, 24.0, 0.0),
                                   iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: const Color(0xFF121236),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
@@ -280,7 +292,8 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                     ),
                   ],
                 ),
-              ),
+              ).animateOnPageLoad(
+                  animationsMap['containerOnPageLoadAnimation']!),
             ),
           ],
         ),
