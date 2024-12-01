@@ -154,6 +154,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ParamType.int,
             ),
           ),
+        ),
+        FFRoute(
+          name: 'ewallet',
+          path: '/ewallet',
+          builder: (context, params) => const EwalletWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

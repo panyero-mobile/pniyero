@@ -9,3 +9,4 @@ export '/pages/wallet/wallet_widget.dart' show WalletWidget;
 export '/pages/games/games_widget.dart' show GamesWidget;
 export '/pages/services/services_widget.dart' show ServicesWidget;
 export '/pages/profile/profile_widget.dart' show ProfileWidget;
+export '/ewallet/ewallet_widget.dart' show EwalletWidget;
