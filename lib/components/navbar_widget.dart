@@ -171,37 +171,18 @@ class _NavbarWidgetState extends State<NavbarWidget>
           ),
           Expanded(
             flex: 2,
-            child: InkWell(
-              splashColor: Colors.transparent,
-              focusColor: Colors.transparent,
-              hoverColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              onTap: () async {
-                context.pushNamed(
-                  'Exchange',
-                  queryParameters: {
-                    'pageIndex': serializeParam(
-                      3,
-                      ParamType.int,
-                    ),
-                  }.withoutNulls,
-                  extra: <String, dynamic>{
-                    kTransitionInfoKey: const TransitionInfo(
-                      hasTransition: true,
-                      transitionType: PageTransitionType.bottomToTop,
-                      duration: Duration(milliseconds: 400),
-                    ),
-                  },
-                );
-              },
-              child: Builder(
-                builder: (context) {
-                  if (widget.pageIndex == 3) {
-                    return Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+            child: Builder(
+              builder: (context) {
+                if (widget.pageIndex == 3) {
+                  return Align(
+                    alignment: const AlignmentDirectional(0.0, 0.0),
+                    child: Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                      child: Material(
+                        color: Colors.transparent,
+                        elevation: 6.0,
+                        shape: const CircleBorder(),
                         child: Container(
                           width: 65.0,
                           height: 65.0,
@@ -219,36 +200,45 @@ class _NavbarWidgetState extends State<NavbarWidget>
                             ],
                             shape: BoxShape.circle,
                           ),
-                          child: Icon(
-                            Icons.anchor,
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            size: 28.0,
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed('Homepage');
+                            },
+                            child: Icon(
+                              Icons.anchor,
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              size: 28.0,
+                            ),
                           ).animateOnPageLoad(
                               animationsMap['iconOnPageLoadAnimation']!),
                         ),
                       ),
-                    );
-                  } else {
-                    return Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Container(
-                        width: 65.0,
-                        height: 65.0,
-                        decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).primary,
-                          shape: BoxShape.circle,
-                        ),
-                        child: const Icon(
-                          Icons.anchor,
-                          color: Colors.white,
-                          size: 32.0,
-                        ),
+                    ),
+                  );
+                } else {
+                  return Align(
+                    alignment: const AlignmentDirectional(0.0, 0.0),
+                    child: Container(
+                      width: 65.0,
+                      height: 65.0,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).primary,
+                        shape: BoxShape.circle,
                       ),
-                    );
-                  }
-                },
-              ),
+                      child: const Icon(
+                        Icons.anchor,
+                        color: Colors.white,
+                        size: 32.0,
+                      ),
+                    ),
+                  );
+                }
+              },
             ),
           ),
           Expanded(
@@ -305,7 +295,7 @@ class _NavbarWidgetState extends State<NavbarWidget>
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
-                        FFIcons.kuser,
+                        Icons.person,
                         color: FlutterFlowTheme.of(context).primary,
                         size: 24.0,
                       ),

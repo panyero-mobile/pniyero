@@ -107,7 +107,7 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: Image.asset(
-                      'assets/images/4a3ee947aa4e02e8ada74ce0eb120dac.jpg',
+                      'assets/images/DALLE_2024-12-02_06.42.03_-_A_highly_detailed_portrait_of_a_marine_deck_officer_in_a_crisp_white_uniform,_standing_confidently_on_a_ships_deck._The_officer_is_male,_wearing_a_wh.webp',
                     ).image,
                   ),
                 ),
@@ -119,48 +119,6 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                       width: double.infinity,
                       height: 140.0,
                       decoration: const BoxDecoration(),
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            30.0, 70.0, 30.0, 0.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8.0),
-                              child: Image.asset(
-                                'assets/images/Untitled_design_(1).png',
-                                width: 176.0,
-                                fit: BoxFit.contain,
-                              ),
-                            ),
-                            InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                context.pushNamed('Login');
-                              },
-                              child: Text(
-                                'Skip',
-                                style: FlutterFlowTheme.of(context)
-                                    .titleMedium
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleMediumFamily,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w500,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleMediumFamily),
-                                    ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
                     ),
                     Align(
                       alignment: const AlignmentDirectional(0.0, 1.0),

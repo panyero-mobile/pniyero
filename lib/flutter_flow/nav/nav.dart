@@ -114,46 +114,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ParamType.int,
             ),
           ),
-        ),
-        FFRoute(
-          name: 'Exchange',
-          path: '/exchange',
-          builder: (context, params) => ExchangeWidget(
-            pageIndex: params.getParam(
-              'pageIndex',
-              ParamType.int,
-            ),
-          ),
-        ),
-        FFRoute(
-          name: 'ExchangeCrypto',
-          path: '/exchangeCrypto',
-          builder: (context, params) => ExchangeCryptoWidget(
-            nameCoin: params.getParam(
-              'nameCoin',
-              ParamType.String,
-            ),
-          ),
-        ),
-        FFRoute(
-          name: 'ExchangeSellConfirm',
-          path: '/exchangeSellConfirm',
-          builder: (context, params) => ExchangeSellConfirmWidget(
-            nameCoin: params.getParam(
-              'nameCoin',
-              ParamType.String,
-            ),
-          ),
-        ),
-        FFRoute(
-          name: 'ExchangeCryptoSell',
-          path: '/exchangeCryptoSell',
-          builder: (context, params) => ExchangeCryptoSellWidget(
-            nameCoin: params.getParam(
-              'nameCoin',
-              ParamType.String,
-            ),
-          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -29,6 +29,18 @@ class _GetStarted02WidgetState extends State<GetStarted02Widget>
     _model = createModel(context, () => GetStarted02Model());
 
     animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 820.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
@@ -107,7 +119,7 @@ class _GetStarted02WidgetState extends State<GetStarted02Widget>
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: Image.asset(
-                      'assets/images/4a3ee947aa4e02e8ada74ce0eb120dac.jpg',
+                      'assets/images/DALLE_2024-12-02_06.44.47_-_A_vibrant_and_inspiring_scene_of_aspiring_mariners_studying_at_Panyero_Academy._The_students,_both_male_and_female,_are_dressed_in_crisp_white_uniform.webp',
                     ).image,
                   ),
                 ),
@@ -119,48 +131,6 @@ class _GetStarted02WidgetState extends State<GetStarted02Widget>
                       width: double.infinity,
                       height: 140.0,
                       decoration: const BoxDecoration(),
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            30.0, 70.0, 30.0, 0.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8.0),
-                              child: Image.asset(
-                                'assets/images/Untitled_design_(1).png',
-                                width: 176.0,
-                                fit: BoxFit.contain,
-                              ),
-                            ),
-                            InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                context.pushNamed('Login');
-                              },
-                              child: Text(
-                                'Skip',
-                                style: FlutterFlowTheme.of(context)
-                                    .titleMedium
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleMediumFamily,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w500,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleMediumFamily),
-                                    ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
                     ),
                     Align(
                       alignment: const AlignmentDirectional(0.0, 1.0),
@@ -323,7 +293,8 @@ class _GetStarted02WidgetState extends State<GetStarted02Widget>
                     ),
                   ],
                 ),
-              ),
+              ).animateOnPageLoad(
+                  animationsMap['containerOnPageLoadAnimation']!),
             ),
           ],
         ),

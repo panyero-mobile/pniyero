@@ -57,7 +57,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
         image: DecorationImage(
           fit: BoxFit.cover,
           image: Image.asset(
-            'assets/images/background_appbar.png',
+            'assets/images/4a3ee947aa4e02e8ada74ce0eb120dac.jpg',
           ).image,
         ),
       ),
@@ -67,18 +67,16 @@ class _AppBarWidgetState extends State<AppBarWidget> {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            InkWell(
-              splashColor: Colors.transparent,
-              focusColor: Colors.transparent,
-              hoverColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              onTap: () async {
-                context.safePop();
-              },
-              child: Icon(
-                Icons.chevron_left_rounded,
-                color: FlutterFlowTheme.of(context).secondaryBackground,
-                size: 28.0,
+            Container(
+              decoration: const BoxDecoration(),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/Untitled_design_(1).png',
+                  width: 146.0,
+                  height: 200.0,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             Row(
