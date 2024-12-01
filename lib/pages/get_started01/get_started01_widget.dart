@@ -185,7 +185,7 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 10.0),
                                 child: Text(
-                                  'Find the best Currency Exchanges',
+                                  'Safety and Speed Combined!',
                                   style: FlutterFlowTheme.of(context)
                                       .headlineLarge
                                       .override(
@@ -208,7 +208,7 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 20.0),
                                   child: Text(
-                                    'Is the app that gives you access to trading tools that you can actively buy & sell digital currencies in an optimal way.',
+                                    'Your data is protected, and your transactions are lightning-fast. Relax, we’ve got you covered!\"',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
                                         .override(

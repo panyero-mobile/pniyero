@@ -1,6 +1,8 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'navbar_model.dart';
 export 'navbar_model.dart';
@@ -17,8 +19,11 @@ class NavbarWidget extends StatefulWidget {
   State<NavbarWidget> createState() => _NavbarWidgetState();
 }
 
-class _NavbarWidgetState extends State<NavbarWidget> {
+class _NavbarWidgetState extends State<NavbarWidget>
+    with TickerProviderStateMixin {
   late NavbarModel _model;
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -30,6 +35,21 @@ class _NavbarWidgetState extends State<NavbarWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => NavbarModel());
+
+    animationsMap.addAll({
+      'iconOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(1.0, 1.0),
+            end: const Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+    });
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
@@ -94,7 +114,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
-                          FFIcons.khome,
+                          Icons.wallet_outlined,
                           color: FlutterFlowTheme.of(context).primary,
                           size: 24.0,
                         ),
@@ -138,9 +158,9 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const FaIcon(
+                      FaIcon(
                         FontAwesomeIcons.gamepad,
-                        color: Color(0x65000000),
+                        color: FlutterFlowTheme.of(context).primary,
                         size: 24.0,
                       ),
                     ].divide(const SizedBox(height: 4.0)),
@@ -186,7 +206,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                           width: 65.0,
                           height: 65.0,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context).primary,
+                            color: FlutterFlowTheme.of(context).tertiary,
                             boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4.0,
@@ -197,14 +217,15 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                                 ),
                               )
                             ],
-                            borderRadius: BorderRadius.circular(10.0),
+                            shape: BoxShape.circle,
                           ),
                           child: Icon(
-                            FFIcons.kexchange,
+                            Icons.anchor,
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            size: 24.0,
-                          ),
+                            size: 28.0,
+                          ).animateOnPageLoad(
+                              animationsMap['iconOnPageLoadAnimation']!),
                         ),
                       ),
                     );
@@ -251,9 +272,9 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Icon(
+                      Icon(
                         Icons.sensors_outlined,
-                        color: Color(0x66000000),
+                        color: FlutterFlowTheme.of(context).primary,
                         size: 24.0,
                       ),
                     ].divide(const SizedBox(height: 4.0)),
