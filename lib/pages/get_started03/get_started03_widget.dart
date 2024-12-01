@@ -107,7 +107,7 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: Image.asset(
-                      'assets/images/eca696876ce61224c2270ad6e87a534a.jpg',
+                      'assets/images/4a3ee947aa4e02e8ada74ce0eb120dac.jpg',
                     ).image,
                   ),
                 ),
@@ -186,7 +186,7 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 10.0),
                                 child: Text(
-                                  'Optimize Your Digital Currency Transactions',
+                                  'Designed for Mariners.',
                                   style: FlutterFlowTheme.of(context)
                                       .headlineLarge
                                       .override(
@@ -209,7 +209,7 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 20.0),
                                   child: Text(
-                                    'Use our app to access advanced trading tools that allow you to buy and sell digital currencies in the most effective manner.',
+                                    '\"Panyero understands your journey. Tailored for seafarers,',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
                                         .override(

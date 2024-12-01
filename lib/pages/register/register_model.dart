@@ -6,19 +6,23 @@ class RegisterModel extends FlutterFlowModel<RegisterWidget> {
   ///  State fields for stateful widgets in this page.
 
   final formKey = GlobalKey<FormState>();
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode1;
-  TextEditingController? textController1;
-  String? Function(BuildContext, String?)? textController1Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode2;
-  TextEditingController? textController2;
-  String? Function(BuildContext, String?)? textController2Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode3;
-  TextEditingController? textController3;
+  // State field(s) for Sponsor widget.
+  FocusNode? sponsorFocusNode;
+  TextEditingController? sponsorTextController;
+  String? Function(BuildContext, String?)? sponsorTextControllerValidator;
+  // State field(s) for Phone widget.
+  FocusNode? phoneFocusNode;
+  TextEditingController? phoneTextController;
+  String? Function(BuildContext, String?)? phoneTextControllerValidator;
+  // State field(s) for Email widget.
+  FocusNode? emailFocusNode;
+  TextEditingController? emailTextController;
+  String? Function(BuildContext, String?)? emailTextControllerValidator;
+  // State field(s) for password widget.
+  FocusNode? passwordFocusNode;
+  TextEditingController? passwordTextController;
   late bool passwordVisibility;
-  String? Function(BuildContext, String?)? textController3Validator;
+  String? Function(BuildContext, String?)? passwordTextControllerValidator;
 
   @override
   void initState(BuildContext context) {
@@ -27,13 +31,16 @@ class RegisterModel extends FlutterFlowModel<RegisterWidget> {
 
   @override
   void dispose() {
-    textFieldFocusNode1?.dispose();
-    textController1?.dispose();
+    sponsorFocusNode?.dispose();
+    sponsorTextController?.dispose();
 
-    textFieldFocusNode2?.dispose();
-    textController2?.dispose();
+    phoneFocusNode?.dispose();
+    phoneTextController?.dispose();
 
-    textFieldFocusNode3?.dispose();
-    textController3?.dispose();
+    emailFocusNode?.dispose();
+    emailTextController?.dispose();
+
+    passwordFocusNode?.dispose();
+    passwordTextController?.dispose();
   }
 }

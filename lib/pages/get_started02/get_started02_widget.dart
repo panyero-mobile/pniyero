@@ -107,7 +107,7 @@ class _GetStarted02WidgetState extends State<GetStarted02Widget>
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: Image.asset(
-                      'assets/images/eca696876ce61224c2270ad6e87a534a.jpg',
+                      'assets/images/4a3ee947aa4e02e8ada74ce0eb120dac.jpg',
                     ).image,
                   ),
                 ),
@@ -186,7 +186,7 @@ class _GetStarted02WidgetState extends State<GetStarted02Widget>
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 10.0),
                                 child: Text(
-                                  'Discover Top Crypto Trading Platforms',
+                                  'Discover Panyero E-services',
                                   style: FlutterFlowTheme.of(context)
                                       .headlineLarge
                                       .override(
@@ -209,7 +209,7 @@ class _GetStarted02WidgetState extends State<GetStarted02Widget>
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 20.0),
                                   child: Text(
-                                    'Provides you with essential trading tools, enabling you to actively engage in buying and selling digital currencies.',
+                                    'Hassle-free transactions and entertainment is here. Let’s get started!\"',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
                                         .override(
