@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "287861754040",
+    "project_id": "exchange-crypto-app-tem-s43v24",
+    "storage_bucket": "exchange-crypto-app-tem-s43v24.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287861754040:android:6a4e862d1ac3f7ca6f8c4d",
+        "android_client_info": {
+          "package_name": "com.linkednetworkonline.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALa8LtliiFt5SQpCLx2aP1V_fA7wImkdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
