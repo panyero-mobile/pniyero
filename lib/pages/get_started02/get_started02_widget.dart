@@ -179,7 +179,7 @@ class _GetStarted02WidgetState extends State<GetStarted02Widget>
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 20.0),
                                   child: Text(
-                                    'Hassle-free learning and entertainment is here. Let’s get started!\"',
+                                    'Hassle-free learning and entertainment is here. Let’s get started!',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
                                         .override(

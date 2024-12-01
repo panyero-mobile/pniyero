@@ -114,6 +114,46 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ParamType.int,
             ),
           ),
+        ),
+        FFRoute(
+          name: 'wallet',
+          path: '/wallet',
+          builder: (context, params) => WalletWidget(
+            pageIndex: params.getParam(
+              'pageIndex',
+              ParamType.int,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'games',
+          path: '/games',
+          builder: (context, params) => GamesWidget(
+            pageIndex: params.getParam(
+              'pageIndex',
+              ParamType.int,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'services',
+          path: '/services',
+          builder: (context, params) => ServicesWidget(
+            pageIndex: params.getParam(
+              'pageIndex',
+              ParamType.int,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'profile',
+          path: '/profile',
+          builder: (context, params) => ProfileWidget(
+            pageIndex: params.getParam(
+              'pageIndex',
+              ParamType.int,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
