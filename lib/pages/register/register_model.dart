@@ -19,14 +19,20 @@ class RegisterModel extends FlutterFlowModel<RegisterWidget> {
   TextEditingController? emailTextController;
   String? Function(BuildContext, String?)? emailTextControllerValidator;
   // State field(s) for password widget.
-  FocusNode? passwordFocusNode;
-  TextEditingController? passwordTextController;
-  late bool passwordVisibility;
-  String? Function(BuildContext, String?)? passwordTextControllerValidator;
+  FocusNode? passwordFocusNode1;
+  TextEditingController? passwordTextController1;
+  late bool passwordVisibility1;
+  String? Function(BuildContext, String?)? passwordTextController1Validator;
+  // State field(s) for password widget.
+  FocusNode? passwordFocusNode2;
+  TextEditingController? passwordTextController2;
+  late bool passwordVisibility2;
+  String? Function(BuildContext, String?)? passwordTextController2Validator;
 
   @override
   void initState(BuildContext context) {
-    passwordVisibility = false;
+    passwordVisibility1 = false;
+    passwordVisibility2 = false;
   }
 
   @override
@@ -40,7 +46,10 @@ class RegisterModel extends FlutterFlowModel<RegisterWidget> {
     emailFocusNode?.dispose();
     emailTextController?.dispose();
 
-    passwordFocusNode?.dispose();
-    passwordTextController?.dispose();
+    passwordFocusNode1?.dispose();
+    passwordTextController1?.dispose();
+
+    passwordFocusNode2?.dispose();
+    passwordTextController2?.dispose();
   }
 }

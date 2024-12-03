@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>287861754040-g0lpf3t5oo690t78v2ko04hn0fnsvsef.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.287861754040-g0lpf3t5oo690t78v2ko04hn0fnsvsef</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>287861754040-eo1k29uht4nilj91jg57jkvrkm9bsijf.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyB0iCO49jdVAaSG9NV-LqAfhl9MzxSCmNg</string>
 	<key>GCM_SENDER_ID</key>
@@ -9,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.linkednetworkonline.android</string>
+	<string>com.panyerowallet.online</string>
 	<key>PROJECT_ID</key>
 	<string>exchange-crypto-app-tem-s43v24</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:287861754040:ios:93b27793a7eab9c76f8c4d</string>
+	<string>1:287861754040:ios:a752d0f3f0bd76836f8c4d</string>
 </dict>
 </plist>

@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'app_bar_model.dart';
 export 'app_bar_model.dart';
 
@@ -111,13 +110,10 @@ class _AppBarWidgetState extends State<AppBarWidget> {
                     'Home',
                   ),
                   style: FlutterFlowTheme.of(context).titleMedium.override(
-                        fontFamily:
-                            FlutterFlowTheme.of(context).titleMediumFamily,
+                        fontFamily: 'Plus Jakarta Sans',
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                         fontSize: 20.0,
                         letterSpacing: 0.0,
-                        useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).titleMediumFamily),
                       ),
                 ),
               ],

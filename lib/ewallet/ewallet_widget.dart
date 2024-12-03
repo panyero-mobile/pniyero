@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'ewallet_model.dart';
 export 'ewallet_model.dart';
 
@@ -88,15 +87,9 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          fontFamily: 'Plus Jakarta Sans',
                                           color: Colors.white,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                   Text(
@@ -104,16 +97,10 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .displaySmall
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .displaySmallFamily,
+                                          fontFamily: 'Outfit',
                                           color: Colors.white,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .displaySmallFamily),
                                         ),
                                   ),
                                 ],
@@ -142,14 +129,9 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      fontFamily: 'Plus Jakarta Sans',
                                       color: Colors.white,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                               ),
                               Text(
@@ -157,14 +139,9 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      fontFamily: 'Plus Jakarta Sans',
                                       color: Colors.white,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                               ),
                             ],
@@ -211,13 +188,8 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      fontFamily: 'Plus Jakarta Sans',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                               ),
                             ].divide(const SizedBox(height: 8.0)),
@@ -251,13 +223,8 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      fontFamily: 'Plus Jakarta Sans',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                               ),
                             ].divide(const SizedBox(height: 8.0)),
@@ -291,13 +258,8 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      fontFamily: 'Plus Jakarta Sans',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                               ),
                             ].divide(const SizedBox(height: 8.0)),
@@ -331,13 +293,8 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily,
+                                      fontFamily: 'Plus Jakarta Sans',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
                                     ),
                               ),
                             ].divide(const SizedBox(height: 8.0)),
@@ -363,13 +320,8 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily,
+                                    fontFamily: 'Outfit',
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .headlineSmallFamily),
                                   ),
                             ),
                           ),
@@ -430,18 +382,10 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily,
+                                                            'Plus Jakarta Sans',
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                                 ),
                                                 Text(
@@ -451,20 +395,12 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                                       .bodySmall
                                                       .override(
                                                         fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodySmallFamily,
+                                                            'Plus Jakarta Sans',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmallFamily),
                                                       ),
                                                 ),
                                               ],
@@ -476,20 +412,12 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                fontFamily: 'Plus Jakarta Sans',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ],
@@ -532,18 +460,10 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily,
+                                                            'Plus Jakarta Sans',
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                                 ),
                                                 Text(
@@ -553,20 +473,12 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                                       .bodySmall
                                                       .override(
                                                         fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodySmallFamily,
+                                                            'Plus Jakarta Sans',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmallFamily),
                                                       ),
                                                 ),
                                               ],
@@ -578,20 +490,12 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                fontFamily: 'Plus Jakarta Sans',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ],
@@ -634,18 +538,10 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily,
+                                                            'Plus Jakarta Sans',
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
                                                       ),
                                                 ),
                                                 Text(
@@ -655,20 +551,12 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                                       .bodySmall
                                                       .override(
                                                         fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodySmallFamily,
+                                                            'Plus Jakarta Sans',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmallFamily),
                                                       ),
                                                 ),
                                               ],
@@ -680,20 +568,12 @@ class _EwalletWidgetState extends State<EwalletWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
+                                                fontFamily: 'Plus Jakarta Sans',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .success,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ],

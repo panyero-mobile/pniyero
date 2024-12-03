@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'get_started03_model.dart';
 export 'get_started03_model.dart';
 
@@ -119,7 +118,9 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: Image.asset(
-                      'assets/images/DALLE_2024-12-02_06.48.52_-_A_distant_shot_of_a_chief_mechanic_resting_after_work,_sitting_on_a_bench_near_a_mechanical_workshop._He_is_smiling_warmly_and_looking_at_his_mobile_p.webp',
+                      Theme.of(context).brightness == Brightness.dark
+                          ? 'assets/images/Screenshot_from_2024-12-02_14-54-03.png'
+                          : 'assets/images/Screenshot_from_2024-12-02_14-54-03.png',
                     ).image,
                   ),
                 ),
@@ -160,15 +161,10 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                                   style: FlutterFlowTheme.of(context)
                                       .headlineLarge
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .headlineLargeFamily,
+                                        fontFamily: 'Outfit',
                                         fontSize: 30.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineLargeFamily),
                                       ),
                                 ).animateOnPageLoad(
                                     animationsMap['textOnPageLoadAnimation1']!),
@@ -183,15 +179,9 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily,
+                                          fontFamily: 'Plus Jakarta Sans',
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation2']!),
@@ -265,18 +255,16 @@ class _GetStarted03WidgetState extends State<GetStarted03Widget>
                                       24.0, 0.0, 24.0, 0.0),
                                   iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: FlutterFlowTheme.of(context).accent1,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleMediumFamily,
+                                        fontFamily: 'Plus Jakarta Sans',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryBackground,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleMediumFamily),
                                       ),
                                   elevation: 0.0,
                                   borderSide: const BorderSide(

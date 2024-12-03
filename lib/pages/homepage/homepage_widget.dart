@@ -69,7 +69,8 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                           ),
                         ),
                         child: FlutterFlowWebView(
-                          content: 'https://panyero.website/home',
+                          content:
+                              'https://panyero.website/wallet-app/landing.html',
                           bypass: false,
                           width: MediaQuery.sizeOf(context).width * 1.0,
                           height: MediaQuery.sizeOf(context).height * 1.0,

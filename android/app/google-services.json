@@ -12,7 +12,12 @@
           "package_name": "com.linkednetworkonline.android"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "287861754040-lpssktdv4icl2c8nm9utq36ad6q57kcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyALa8LtliiFt5SQpCLx2aP1V_fA7wImkdk"
@@ -20,7 +25,63 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287861754040-lpssktdv4icl2c8nm9utq36ad6q57kcr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "287861754040-bfv7o4njf0ho9i3vm46e657b8kiq0bml.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.linkednetworkonline.android"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287861754040:android:800b361218b869406f8c4d",
+        "android_client_info": {
+          "package_name": "com.panyerowallet.online"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287861754040-eo1k29uht4nilj91jg57jkvrkm9bsijf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.panyerowallet.online",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "287861754040-lpssktdv4icl2c8nm9utq36ad6q57kcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALa8LtliiFt5SQpCLx2aP1V_fA7wImkdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287861754040-lpssktdv4icl2c8nm9utq36ad6q57kcr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "287861754040-bfv7o4njf0ho9i3vm46e657b8kiq0bml.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.linkednetworkonline.android"
+              }
+            }
+          ]
         }
       }
     }

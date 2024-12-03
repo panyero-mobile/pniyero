@@ -159,13 +159,6 @@ flutter:
     - assets/pdfs/
     - assets/jsons/
 
-  fonts:
-    - family: MyFlutterApp
-      fonts:
-        - asset: assets/fonts/MyFlutterApp.ttf
-    - family: MoreIcons
-      fonts:
-        - asset: assets/fonts/MoreIcons.ttf
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

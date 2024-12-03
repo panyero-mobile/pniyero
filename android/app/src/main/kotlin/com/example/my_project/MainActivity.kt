@@ -1,4 +1,4 @@
-package com.linkednetworkonline.android
+package com.panyerowallet.online
 
 import io.flutter.embedding.android.FlutterActivity
 

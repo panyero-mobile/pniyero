@@ -135,7 +135,7 @@ class _NavbarWidgetState extends State<NavbarWidget>
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Icon(
-                          FFIcons.khome,
+                          Icons.wallet_outlined,
                           color: Color(0x65000000),
                           size: 24.0,
                         ),
@@ -155,8 +155,8 @@ class _NavbarWidgetState extends State<NavbarWidget>
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Icon(
-                        FFIcons.kanalytics,
+                      const FaIcon(
+                        FontAwesomeIcons.gamepad,
                         color: Colors.black,
                         size: 24.0,
                       ),
@@ -269,7 +269,7 @@ class _NavbarWidgetState extends State<NavbarWidget>
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Icon(
-                        FFIcons.khour,
+                        Icons.anchor,
                         color: Colors.black,
                         size: 24.0,
                       ),
@@ -310,7 +310,7 @@ class _NavbarWidgetState extends State<NavbarWidget>
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Icon(
-                        FFIcons.kuser,
+                        Icons.person,
                         color: Colors.black,
                         size: 24.0,
                       ),

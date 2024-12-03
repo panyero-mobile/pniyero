@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'get_started01_model.dart';
 export 'get_started01_model.dart';
 
@@ -119,7 +118,7 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: Image.asset(
-                      'assets/images/DALLE_2024-12-02_06.42.03_-_A_highly_detailed_portrait_of_a_marine_deck_officer_in_a_crisp_white_uniform,_standing_confidently_on_a_ships_deck._The_officer_is_male,_wearing_a_wh.webp',
+                      'assets/images/Screenshot_from_2024-12-02_14-22-50.png',
                     ).image,
                   ),
                 ),
@@ -136,9 +135,9 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                       alignment: const AlignmentDirectional(0.0, 1.0),
                       child: Container(
                         width: double.infinity,
-                        decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
+                        decoration: BoxDecoration(
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(30.0),
@@ -159,15 +158,12 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                                   style: FlutterFlowTheme.of(context)
                                       .headlineLarge
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .headlineLargeFamily,
+                                        fontFamily: 'Outfit',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryBackground,
                                         fontSize: 30.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineLargeFamily),
                                       ),
                                 ).animateOnPageLoad(
                                     animationsMap['textOnPageLoadAnimation1']!),
@@ -182,15 +178,11 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyLargeFamily,
+                                          fontFamily: 'Plus Jakarta Sans',
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryBackground,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLargeFamily),
                                         ),
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation2']!),
@@ -263,18 +255,16 @@ class _GetStarted01WidgetState extends State<GetStarted01Widget>
                                       24.0, 0.0, 24.0, 0.0),
                                   iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: const Color(0xFF121236),
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBackground,
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleMediumFamily,
+                                        fontFamily: 'Plus Jakarta Sans',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleMediumFamily),
                                       ),
                                   elevation: 0.0,
                                   borderSide: const BorderSide(
